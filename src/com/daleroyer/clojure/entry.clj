@@ -9,5 +9,5 @@
   (case (first args)
     "1" (apply rotating-rectangle/app (rest args))
     "2" (apply two-d-example-1/app (rest args))
-    "fat-jar" (fat-jar/app)
+    "fat-jar" (fat-jar/app (rest args))
     (apply two-d-game-1/app (rest args))))

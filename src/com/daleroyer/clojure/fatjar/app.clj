@@ -29,9 +29,9 @@
   (with-open [out (ZipOutputStream. (io/output-stream out-name))]
     (process-jar in-name out)))
 
-(defn app []
-  (let [to-process
-        [ "lib/jinput/jinput-platform-2.0.7-natives-linux"]
+(defn app [jar-file-prefixes]
+  (let [to-process jar-file-prefixes
+        ;;[ "lib/jinput/jinput-platform-2.0.7-natives-linux"]
         ;; ["resources/jogamp-all-platforms/jar/gluegen-rt"
         ;;  "resources/jogamp-all-platforms/jar/gluegen-rt-natives-linux-amd64"
         ;;  "resources/jogamp-all-platforms/jar/jogl-all"
