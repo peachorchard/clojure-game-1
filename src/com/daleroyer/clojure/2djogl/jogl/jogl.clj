@@ -2,8 +2,7 @@
   (:import [java.nio IntBuffer FloatBuffer])
   (:import [com.jogamp.opengl.util GLBuffers])
   (:import [com.jogamp.opengl GL GL4 GLAutoDrawable])
-  (:import [com.jogamp.opengl.util.glsl ShaderCode ShaderProgram]) 
-  (:require [com.daleroyer.clojure.2djogl.jogl.jogl :as jogl]))
+  (:import [com.jogamp.opengl.util.glsl ShaderCode ShaderProgram]))
 
 (defn get-g4 [^GLAutoDrawable drawable]
   (.getGL4 (.getGL drawable)))
